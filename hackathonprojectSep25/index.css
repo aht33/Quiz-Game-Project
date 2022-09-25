@@ -1,0 +1,139 @@
+.btn {
+    position: absolute;
+    height: fit-content;
+    /* width: 30%; */
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 5vw;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #cfd2cf;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .btn:hover {
+    background-color: #cfd2cf;
+  }
+  
+  .btn:active {
+    background-color: #cfd2cf;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  #play {
+    top: 30%;
+    left: 60%;
+  }
+  
+  #choice1 {
+    font-size: 3vw;
+    top: 50%;
+    left: 10%;
+    width: 35vw;
+    height: 30%;
+  }
+  
+  #choice2 {
+    font-size: 3vw;
+    top: 50%;
+    right: 10%;
+    width: 35vw;
+    height: 30%;
+  }
+
+  #continue {
+    position:relative;
+    width: 30vw;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .question {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 30%;
+    font-size: 4vw;
+    text-align: center;
+    border-radius: 15px;
+    display: inline-block;
+    outline: none;
+    background-color: #fa9494;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .questionText {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    top: 25%;
+    left: 10%;
+    font-size: 5vw;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    max-width: 30%;
+    max-height: 40%;
+  }
+  
+  #motto {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    max-width: 40%;
+    max-height: 70%;
+  }
+
+  #jake {
+    position: relative;
+    max-width: 40%;
+    max-height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .congrats {
+    position: relative;
+    top: 30%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    line-height: 0;
+  }
+  
+  .text {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #tracker {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ln="en">
+  <head>
+    <title>Assurance</title>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <meta name="description" content="" />
+    <script src="index.js"></script>
+  </head>
+
+  <body style="background-color: #f5eddc">
+    <audio id="sound">
+      <source src="SFJingle.mp3" />
+    </audio>
+
+    <div class="page" id="home" , style="display: block">
+      <img class="logo" src="images/State-Farm-Logo.png" alt="statefarm-logo" />
+      <img
+        id="motto"
+        src="images/motto.png"
+        alt="Assure you're insured with this insurance game"
+      />
+      <button class="btn" id="play" onclick="playFunction()">Play</button>
+    </div>
+
+    <div class="page" id="game" , style="display: none">
+      <div id="timer"></div>
+      <!--Alex-->
+      <div class="question">
+        <div class="questionText" id="questiontext">Question</div>
+      </div>
+      <button class="btn" id="choice1" onclick="nextQuestionLeft(true)">
+        Ans1
+      </button>
+      <button class="btn" id="choice2" onclick="nextQuestionRight(false)">
+        Ans2
+      </button>
+    </div>
+
+    <div class="page" id="failed-level" , style="display: none">
+      <div style="height: 100px"></div>
+      <p class="text" id="nfail" style="font-size: 50px">Level {n} failed...</p>
+      <p class="text">Would you like to try that again?</p>
+      <button class="btn" id="continue" onclick="restart()">Continue</button>
+    </div>
+
+    <div class="page" id="next-level" , style="display: none">
+      <div class="center">
+        <div style="height: 100px"></div>
+        <p class="text">You have answered all of the</p>
+        <p class="text" id="nlevel">questions for level {{n}} correctly,</p>
+        <p class="text">continue on the next page.</p>
+        <button class="btn" id="continue" onclick="loadQuestion()">
+          Continue
+        </button>
+      </div>
+    </div>
+
+    <div class="page" id="victory" , style="display: none">
+      <div style="height: 100px"></div>
+      <p class="congrats">Congratulations!</p>
+      <p class="text">You now have completed the game!</p>
+      <p class="text">You can now select the insurance</p>
+      <p class="text">that fits your needs!</p>
+      <img id="jake" src="images/jake.gif" alt="Jake" />
+    </div>
+    <div id="tracker">Lvl: 1, Round: 1</div>
+  </body>
+  <div style="display: none">
+    <p id="hidden-variables"></p>
+  </div>
+</html>
